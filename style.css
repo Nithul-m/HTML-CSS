@@ -1,0 +1,11 @@
+*{
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::selection{
+    background-color: blue;
+    color: whitesmoke;
+}
+input:hover, a:hover{
+    background-color: lightcoral;
+}

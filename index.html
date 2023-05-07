@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Account</title>
+    <style>
+        #firstdiv {
+            width: 25%;
+            padding: 10px;
+            margin-left: 37%;
+            background-color: aqua;
+            text-align: center;
+               }
+        #secdiv {
+            background-color: aquamarine;
+            width: 60%;
+            margin-left: 20%;
+        }
+        .fav{
+            background-color: blueviolet;
+        }
+        #body{
+            background-color: blanchedalmond;
+        
+        }
+        body h1{
+            background-color: white;
+        }
+        input[type=text], select, input[type=email],input[type=number],input[type=date] {
+             width: 100%;
+             padding: 12px 20px;
+             margin: 8px 0;
+             display: inline-block;
+             border: 1px solid #ccc;
+             border-radius: 4px;
+             box-sizing: border-box;
+        }
+        form{
+            text-align: center;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <form action="index1.html">
+    <h1>Create your Digital Account</h1>
+    <h2 style="text-decoration: underline;">Fill your primary details</h2>
+  
+    
+   
+         <div id="firstdiv">
+            <fieldset>
+                <legend>Fill here</legend>
+                <label>Title:</label>
+                    <select name="title" id="title">
+                        <option value="1">Ms</option>
+                        <option value="2">Mrs</option>
+                        <option value="2">Mr</option>
+                    </select> <br><br>
+                <label>First Name:</label> <input type="text" name="name" id="name1"><br><br>
+                <label>Last Name:</label> <input type="text" name="name" id="name2"><br><br>
+                <label>Gender:</label> 
+                    <select name="gender" id="gender">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="t">Transgender</option>
+                    </select> <br><br>
+                <label>Date of Birth:</label> <input type="date" name="date" id="date"><br><br>
+                <label>Phone number:</label> <input type="number"><br><br>
+                <label>Email:</label> <input type="email"><br><br>
+            </fieldset>
+               
+        </div>
+        
+    <h3 style="text-decoration: underline";> Enter your educational details</h3>
+        <div id="secdiv">
+            <fieldset>
+                <table border="1">
+                    <tr>
+                        <th><br></th>
+                        <th>Institution name
+                        </th>
+                        <th>Year of passing
+                        </th>
+                        <th>Percentage of marks
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th>Class X</th>
+                            <td> <input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <th>Class XII</th>
+                            <td> <input type="text"></td>
+                             <td><input type="number"></td>
+                            <td><input type="number"></td>
+                     </tr>
+                    <tr>
+                        <th>Graduation</th>
+                             <td> <input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                    </tr>
+        
+                 </table>
+            </fieldset>
+               
+        </div>
+    <h4 style="text-decoration: underline";>To know more about you:</h4>    
+        <div>
+           <label class="fav">1. Is this your Favourite Tune?</label> <br> <audio src="favsong.mp3" type="audio/mp3" width="40" height="10"  controls></audio><br>Yes<input type="checkbox" > No<input type="checkbox" ><br><br>
+           <label class="fav">2. Is this your Favourite Video?</label> <br> <video src="nattu_nattu.mp4" type="video/mp4" width="320" height="240" controls></video><br> <input type="radio">yes <input type="radio">no
+
+        </div>
+    <a href="#firstdiv">Click here to fill primary details </a>    
+    <br>
+    <br>
+    <input type="Submit" value="Submit" >
+    </form>
+
+</body>
+</html>
